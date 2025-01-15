@@ -4,8 +4,8 @@
 
 As part of `Deliverable ⓵ Development deployment: JWT Pizza`, start up the application and debug through the code until you understand how it works. During the learning process fill out the following required pieces of information in order to demonstrate that you have successfully completed the deliverable.
 
-| User activity                                       | Frontend component | Backend endpoints | Database SQL
-| --------------------------------------------------- | ------------------ | ----------------- | ------------ 
+| User activity                                       | Frontend component | Backend endpoints | Database SQL |
+| --------------------------------------------------- | ------------------ | ----------------- | ------------ |
 | View home page                                      | home.tsx           | none              | none         |
 | Register new user<br/>(t@jwt.com, pw: test)         | login.tsx          | [POST] /api/auth  | INSERT INTO user (name, email, password) VALUES(?, ?, ?), INSERT INTO userRole (userId, role, objectId) VALUES (?, ?, ?)|
 | Login new user<br/>(t@jwt.com, pw: test)            | login.tsx          | [PUT] /api/auth   | INSERT INTO auth (token, userId) VALUES (?, ?)|
