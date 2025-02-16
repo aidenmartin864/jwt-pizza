@@ -150,3 +150,4 @@ export default function App() {
 ### Icons
 
 [HeroIcons](https://heroicons.com/) - MIT license
+![Coverage badge](https://badge.cs329.click/badge/aidenmartin864/jwtpizzacoverage)

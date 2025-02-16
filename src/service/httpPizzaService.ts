@@ -1,7 +1,10 @@
 import { PizzaService, Franchise, Store, OrderHistory, User, Menu, Order, Endpoints, OrderResponse, JWTPayload } from './pizzaService';
 
-const pizzaServiceUrl = import.meta.env.VITE_PIZZA_SERVICE_URL;
-const pizzaFactoryUrl = import.meta.env.VITE_PIZZA_FACTORY_URL;
+// const pizzaServiceUrl = import.meta.env.VITE_PIZZA_SERVICE_URL;
+// const pizzaFactoryUrl = import.meta.env.VITE_PIZZA_FACTORY_URL;
+
+const pizzaServiceUrl = "http://localhost:3000"
+const pizzaFactoryUrl = "https://pizza-factory.cs329.click"
 
 class HttpPizzaService implements PizzaService {
   async callEndpoint(path: string, method: string = 'GET', body?: any): Promise<any> {
