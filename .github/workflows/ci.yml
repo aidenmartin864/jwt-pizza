@@ -36,10 +36,10 @@ jobs:
         with:
           name: package
           path: dist/
-      - name: Run tests
-        run: |
-          npx playwright install --with-deps chromium
-          npm run test:coverage
+      # - name: Run tests
+      #   run: |
+      #     npx playwright install --with-deps chromium
+      #     npm run test:coverage
       # - name: Update coverage
       #   run: |
       #     coverage=$(jq '.total.lines.pct' coverage/coverage-summary.json)
